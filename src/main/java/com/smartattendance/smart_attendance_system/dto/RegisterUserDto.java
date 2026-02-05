@@ -23,6 +23,10 @@ public class RegisterUserDto {
         private String password;
     @NotNull(message = "Role is required.")
         private Role role;
+    @NotBlank(message = "level is required.")
+    private Integer level;
+    @NotBlank(message = "department is required.")
+    private String department;
     @NotBlank(message = "Device Id is required.")
         private String deviceId;
 

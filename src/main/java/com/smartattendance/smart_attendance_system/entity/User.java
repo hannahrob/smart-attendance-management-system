@@ -32,7 +32,11 @@ public class User {
     private Role role; // STUDENT, LECTURER, ADMIN
     @Column(name = "Device_ID")
         private String deviceId; // for device binding
-    @OneToMany(mappedBy = "assignedLecturer")
-    private List<Course> classes;
+    @Column(name = "level")
+    private Integer level;       // 100, 200, 300...
+    @Column(name = "department")
+    private String department;
+//    @OneToMany(mappedBy = "assignedLecturer")
+//    private List<Course> classes;
 
 }

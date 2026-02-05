@@ -18,6 +18,8 @@ public class UpdateUserDto {
         private String email;
         private String password;
         private Role role;
+    private Integer level;
+    private String department;
         private String deviceId;
 
 }

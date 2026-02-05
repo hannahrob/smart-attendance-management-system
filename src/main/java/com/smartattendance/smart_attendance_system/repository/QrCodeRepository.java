@@ -1,4 +1,7 @@
-package com.smartattendance.smart_attendance_system.repository;
-
-public interface QrCodeRepository {
-}
+//package com.smartattendance.smart_attendance_system.repository;
+//
+//import org.springframework.stereotype.Repository;
+//
+//@Repository
+//public interface QrCodeRepository {
+//}
