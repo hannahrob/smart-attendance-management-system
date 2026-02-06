@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("smart-attendance-system/api")
+@RequestMapping("/smart-attendance-system/api")
 @RequiredArgsConstructor
 @Slf4j
 public class SmartAttendanceController {
@@ -26,7 +26,7 @@ public class SmartAttendanceController {
 
         // ========================= USER ENDPOINTS =========================
         @PostMapping("/register-user")
-        public ResponseEntity<AttendanceResponse> registerUser(@Validated @RequestBody RegisterUserDto dto){
+        public ResponseEntity<AttendanceResponse> createUser(@Validated @RequestBody RegisterUserDto dto){
             return userService.registerUser(dto);
         }
 
